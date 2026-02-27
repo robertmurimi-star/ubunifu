@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.main{
+    margin: 100px 75px 75px 75px;
+}
+
+.projects-title{
+
+}
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: calc(25% - 20px);
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+
+</head>
+<body class="body">
+    <header id="header" class="header-main"></header>
+
+    <br>
+    <main class="main">
+        <div class="projects-title">
+            <h1>Some Of Our Finished Projects</h1>
+        </div>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="img/metalumb.webp" width="600" height="400">
+
+                <div class="desc">Outdoor Shades&Benches</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gates.jpg" width="600" height="400">
+
+                <div class="desc">Steel Gates </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/house1.jpg" width="600" height="400">
+                <div class="desc">Houses</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/house2.jpeg" width="600" height="400">
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer-main"></footer>
+
+
+</body>lll
+<script src="headerfooter.js"></script>
+<script>
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+</script>
+</html>

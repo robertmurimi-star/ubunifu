@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js">
+    </script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="body">
+    <header id="header" class="header-main"></header>
+
+    <br>
+    <main class="main">
+        <div class="pics" >
+            <img class="mySlides" src="img/estate.jpg">
+
+            <img class="mySlides" src="img/estate1.jpg">
+        </div>
+        <div class="text">
+            <h1 class="text1">
+                Proficiency is what we offer to all our clients
+            </h1>
+            <h2 class="text2">
+                As Ubunifu Builders, we believe in nothing but simple, assuaging & professional construction solutions
+            </h2><br>
+            <h3>
+                About Us
+            </h3>
+            <p>
+                UBUNIFU BUILDERS LTD is a leading solutions provider focusing on Architectural designs and Construction Solutions.<br><br>
+                UBL has a team of professionals with extensive and accumulated experience spanning over 20 years,
+                working in different sectors of the built environment, <br>
+                i.e.(Architecture, Interior design, Quantity surveying, Project management).<br>
+                The team has worked both as contractor’s agents and professional consultants representing the interests of developers.<br><br>
+                UBL applies the best Architectural and Construction practices ensuring we provide our clients with exceptional services.
+            </p>
+
+
+        </div>
+
+        <div class="service">
+            <div>
+                <a href="construction.html" ><img class="img1-1" src="img/house1.jpg"><h2>General Construction</h2></a>
+
+            </div>
+            <div>
+                <a href="design.html"><img  class="img2-2" src="img/architect.jpg"><h2>Architectural & Interior Design</h2></a>
+
+            </div>
+            <div>
+                <a href="renovations.html" ><img class="img3-3" src="img/officere.jpg"><h2>Renovations:Homes,Offices,Shops</h2></a>
+
+            </div>
+            <div>
+                <a href="steel.html"><img class="img4-4" src="img/metalumb.webp"><h2>Steel Fabrications & Containers</h2></a>
+
+            </div>
+        </div>
+    </main>
+    <br>
+
+    <footer id="footer" class="footer-main"/>
+
+
+
+
+</body>
+<script src="headerfooter.js"></script>
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+
+</script>
+</html>

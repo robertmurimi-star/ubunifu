@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contacts</title>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body class="body">
+    <header id="header" class="header-main"></header>
+
+    <br>
+    <main class="main">
+        <div class="contact-title">
+            <h1>Get in Touch</h1>
+            <hr>
+        </div>
+        <div>
+            <div class="contact-container">
+                <div class="contact-right">
+                    <h4>We'd like to here from you!</h4>
+                    <p>If you have any inqueries or just want to say hi, please use any of our platforms, or submit a message on the form</p>
+                    <br>
+                    <p><img src="img/email.png" height="30px"> ubunifulimited@gmail.com</p>
+                </div>
+
+                <form action="" class="contact-left">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit <img src="" alt=""></button>
+                </form>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer-main"></footer>
+
+
+</body>
+<script src="headerfooter.js"></script>
+<script>
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+</script>
+</html>

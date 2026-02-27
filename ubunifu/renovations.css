@@ -1,0 +1,18 @@
+.main{
+    margin: 100px 75px 75px 75px;
+}
+.renovation-title{
+
+}
+.grid-container{
+    display:grid;
+    grid-template: auto / 500px 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+
+}
+@media (max-width: 1000px){
+    .grid-container{
+        grid-template: auto / 500px;
+    }
+}

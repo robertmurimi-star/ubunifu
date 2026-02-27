@@ -1,0 +1,19 @@
+.main{
+    margin: 100px 75px 75px 75px;
+}
+.construction-title{
+
+
+}
+
+.column-group{
+    display:grid;
+    grid-template-columns: 500px 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+@media (max-width: 1000px){
+    .column-group{
+        grid-template-columns: 500px;
+    }
+}
